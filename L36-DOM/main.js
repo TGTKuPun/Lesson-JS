@@ -1,34 +1,26 @@
-// 8. getAttribute
-// Sử dụng querySelector để chọn thẻ a đầu tiên.
-const firstLink = document.querySelector("a");
-// console.log (firstLink);
+// 10. hasAttribute()
+// const item1 = document.querySelector(".list");
 
-if (firstLink) {
-    const linkHref = firstLink.getAttribute("href");
-    console.log(linkHref); 
-}
-else {
-    console.log("Không tìm thấy thẻ a");
-}
+// console.log(item1.hasAttribute("class"));
 
-// 9. setAttribute
-// "target", "_blank": dùng để mở trang mới.
-firstLink.setAttribute("target", "_blank");
+const item2 = document.querySelector(".heading-title");
 
-// Sử dụng querySelectorAll để chọn tất cả các thẻ a trong ul.
-const links = document.querySelectorAll("ul a");
-console.log(links);
-// Lập qua mỗi thẻ a và sử dụng setAttribute
-// để thêm thuộc tính target="_blank"
-links.forEach((singleLink) => {
-    singleLink.setAttribute("target", "_blank");
+// 11. removeAttribute()
+// to check existence of that attribute.
+console.log(item2.hasAttribute("style"));
+
+item2.removeAttribute("style");
+
+console.log(item2.hasAttribute("style"));
+
+// Assignment: remove all the "href" attributes of tag "a".
+
+const item3 = document.querySelectorAll("ul a");
+
+item3.forEach((singleLink) => {
+    singleLink.removeAttribute("href");
 });
 
-// Bài tập đổi red thành blue.
-const firstStyle = document.querySelector("h1");
-// console.log(firstStyle);
 
-// const firstColor = firstStyle.getAttribute("style");
-// console.log(firstColor);
 
-firstStyle.setAttribute("style", "color: blue;");
+
