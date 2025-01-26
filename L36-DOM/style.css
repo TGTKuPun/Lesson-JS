@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom, #6a3093, #a044ff); */
+    background-image: url(./126311651_p0_master1200.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.clock-container {
+    width: 360px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-size: 56px;
+}
