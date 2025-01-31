@@ -1,0 +1,43 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+#container div {
+    /* align to center  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    /* decoration */
+    background-color: lightblue;
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
